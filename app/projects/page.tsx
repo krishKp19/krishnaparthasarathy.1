@@ -1,13 +1,10 @@
 export default function Projects() {
   return (
-    <main className="min-h-screen bg-[#FFFDF4] text-black px-10 py-16">
-      
-      <h1 className="text-5xl font-bold mb-10">Projects</h1>
-
-      <p className="text-lg leading-relaxed">
-        Detailed project case studies and product work will be added here.
+    <main className="min-h-screen px-6 md:px-10 py-12 md:py-16 bg-[#FFFDF4] text-black">
+      <h1 className="text-3xl md:text-5xl font-bold mb-10">Projects</h1>
+      <p className="text-sm md:text-base">
+        Detailed project case studies will be added here.
       </p>
-
     </main>
   );
 }
