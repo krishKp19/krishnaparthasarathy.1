@@ -15,7 +15,7 @@ export default function Home() {
         </h1>
 
         <p className="mt-4 text-base md:text-xl text-gray-700 max-w-3xl">
-          Product & Analytics Professional | ex-Amazon (4+ yrs) | Owned metrics,
+          Product & Infrastructure Professional | ex-Amazon (4+ yrs) | Owned metrics,
           releases & cost optimization | PGPM ’26 – Great Lakes Chennai
         </p>
 
@@ -25,8 +25,7 @@ export default function Home() {
           </h2>
 
           <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-            Welcome to my page. This space highlights my professional journey so far,
-            along with experiences that have shaped how I think and work.
+            Welcome to my page. This space highlights my professional journey so far, along with experiences that have shaped how I think and work. Explore to learn more about the path I’ve taken.
           </p>
         </div>
       </section>
@@ -40,8 +39,7 @@ export default function Home() {
             About Me
           </h2>
           <p className="text-gray-800 leading-relaxed text-sm md:text-base">
-            I am a technically grounded professional with experience in large-scale
-            systems, reliability engineering, and cross-functional collaboration.
+            I am a technically grounded professional with experience working close to large-scale consumer products at Amazon, focusing on reliability, quality, and operational excellence. My background spans application engineering, product support, and QA, where I worked cross-functionally to improve systems, processes, and user-facing experiences. Through metrics, dashboards, and release ownership, I learned how product decisions impact customers, teams, and long-term outcomes. I am now transitioning into product management, aiming to build thoughtful, data-informed products that solve real user problems at scale.
           </p>
         </div>
       </section>
