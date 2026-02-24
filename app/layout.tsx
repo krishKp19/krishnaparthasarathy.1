@@ -52,12 +52,12 @@ export default function RootLayout({
           {/* LOGOS */}
           <div className="flex items-center gap-4">
             <img
-              src="/amazon.jpg"
+              src="/amazon.png"
               alt="Amazon"
               className="h-7 md:h-8 w-auto object-contain"
             />
             <img
-              src="/greatlakes.jpg"
+              src="/greatlakes.png"
               alt="Great Lakes"
               className="h-7 md:h-8 w-auto object-contain"
             />
