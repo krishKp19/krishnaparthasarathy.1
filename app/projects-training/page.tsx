@@ -108,75 +108,98 @@ export default function ProjectsTraining() {
   ];
 
   return (
-    <main className="min-h-screen px-6 md:px-10 py-12 md:py-16 bg-[#FFFDF4] text-black">
-      <h1 className="text-3xl md:text-5xl font-bold mb-12">
-        Projects & Training
-      </h1>
+    <main className="min-h-screen flex flex-col text-slate-900 pb-20">
+      
+      <section className="px-6 py-16 md:py-24 max-w-5xl mx-auto w-full">
+        <h1 className="text-3xl md:text-5xl font-bold mb-12 md:mb-16 text-slate-900 text-center">
+          Projects & Training
+        </h1>
 
-      <div className="space-y-8">
-        {projects.map((project, index) => (
-          <div key={index} className="border border-black p-6 bg-white">
-            <div
-              onClick={() =>
-                setActiveProject(activeProject === index ? null : index)
-              }
-              className="cursor-pointer"
-            >
-              <h2 className="text-xl font-semibold">{project.title}</h2>
-              <p className="text-sm text-gray-700 mt-1">
-                {project.tagline}
-              </p>
-            </div>
-
-            {activeProject === index && (
-              <div className="mt-6 space-y-5 text-sm md:text-base leading-relaxed">
-
-                <div>
-                  <h3 className="font-semibold mb-1">
-                    Project Overview:
-                  </h3>
-                  <p>{project.overview}</p>
+        <div className="space-y-6">
+          {projects.map((project, index) => (
+            <div key={index} className="bg-white/70 backdrop-blur-xl rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-300">
+              
+              {/* Clickable Header */}
+              <button
+                onClick={() =>
+                  setActiveProject(activeProject === index ? null : index)
+                }
+                className="cursor-pointer flex flex-col md:flex-row md:justify-between items-start md:items-center w-full text-left px-6 md:px-10 py-6 md:py-8 rounded-3xl transition-all duration-300"
+              >
+                <div className="pr-4">
+                  <h2 className="text-xl md:text-2xl font-bold text-slate-900">
+                    {project.title}
+                  </h2>
+                  <p className="text-sm md:text-base text-slate-600 font-medium mt-2">
+                    {project.tagline}
+                  </p>
                 </div>
+                <span className={`hidden md:block text-slate-500 font-bold ml-4 transition-transform duration-300 ${activeProject === index ? "rotate-180 text-blue-500" : "rotate-0"}`}>
+                  +
+                </span>
+                <span className={`md:hidden text-slate-500 font-bold mt-4 transition-transform duration-300 ${activeProject === index ? "rotate-180 text-blue-500" : "rotate-0"}`}>
+                  +
+                </span>
+              </button>
 
-                <div>
-                  <h3 className="font-semibold mb-1">
-                    What I Did:
-                  </h3>
-                  <p>{project.whatIDid}</p>
-                </div>
+              {/* Expanding Content */}
+              <div 
+                className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                  activeProject === index ? "max-h-[1500px] opacity-100" : "max-h-0 opacity-0"
+                }`}
+              >
+                <div className="px-6 md:px-10 pb-8 pt-2">
+                  <div className="bg-white/95 backdrop-blur-md border border-slate-200 rounded-2xl p-6 md:p-8 text-sm md:text-base text-slate-700 font-medium leading-relaxed shadow-inner space-y-8">
+                    
+                    <div>
+                      <h3 className="font-bold text-slate-900 mb-2 uppercase tracking-wide text-xs">
+                        Project Overview
+                      </h3>
+                      <p>{project.overview}</p>
+                    </div>
 
-                <div>
-                  <h3 className="font-semibold mb-1">
-                    Impact:
-                  </h3>
-                  <ul className="list-disc pl-6 space-y-1">
-                    {project.impact.map((item, i) => (
-                      <li key={i}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
+                    <div>
+                      <h3 className="font-bold text-slate-900 mb-2 uppercase tracking-wide text-xs">
+                        What I Did
+                      </h3>
+                      <p>{project.whatIDid}</p>
+                    </div>
 
-                <div>
-                  <h3 className="font-semibold mb-1">
-                    Skills Demonstrated:
-                  </h3>
-                  <div className="flex flex-wrap gap-2">
-                    {project.skills.map((skill, i) => (
-                      <span
-                        key={i}
-                        className="border border-black px-3 py-1 text-xs"
-                      >
-                        {skill}
-                      </span>
-                    ))}
+                    <div>
+                      <h3 className="font-bold text-slate-900 mb-3 uppercase tracking-wide text-xs">
+                        Impact
+                      </h3>
+                      <ul className="list-disc pl-6 space-y-2">
+                        {project.impact.map((item, i) => (
+                          <li key={i}>{item}</li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h3 className="font-bold text-slate-900 mb-3 uppercase tracking-wide text-xs">
+                        Skills Demonstrated
+                      </h3>
+                      <div className="flex flex-wrap gap-2 md:gap-3">
+                        {project.skills.map((skill, i) => (
+                          <span
+                            key={i}
+                            className="bg-white border border-slate-200 text-slate-700 px-3 py-1.5 rounded-lg text-xs font-bold shadow-sm"
+                          >
+                            {skill}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
                   </div>
                 </div>
-
               </div>
-            )}
-          </div>
-        ))}
-      </div>
+
+            </div>
+          ))}
+        </div>
+      </section>
     </main>
   );
 }

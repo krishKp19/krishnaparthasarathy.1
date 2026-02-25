@@ -93,85 +93,96 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen flex flex-col bg-[#FFFDF4] text-black">
+    <main className="min-h-screen flex flex-col text-slate-900">
 
       {/* HERO SECTION */}
       <section className="flex flex-col items-center justify-center text-center px-6 py-16 md:py-20">
         <img
           src="/profile.jpg"
           alt="Krishna"
-          className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover mb-6 md:mb-8 shadow-md"
+          className="w-32 h-32 md:w-44 md:h-44 rounded-full object-cover mb-8 shadow-md border-4 border-white"
         />
 
-        <h1 className="text-3xl md:text-6xl font-semibold tracking-tight">
+        <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-slate-900 mb-6">
           Krishna Parthasarathy
         </h1>
 
-        <p className="mt-4 text-base md:text-xl text-gray-700 max-w-3xl">
-          Infrastructure Strategy & Cloud Product Leader | ex-Amazon | Driving reliability, cost optimization & cross-functional outcomes
+        <p className="text-base md:text-xl text-slate-700 max-w-2xl font-medium leading-relaxed">
+          Infrastructure Strategy & Cloud Product Leader | ex-Amazon <br className="hidden md:block" /> Driving reliability, cost optimization & cross-functional outcomes.
         </p>
 
-        <div className="mt-8 md:mt-10 max-w-2xl bg-white p-6 md:p-8 rounded-xl shadow-sm border border-black">
-          <h2 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">
+        {/* WIDER, MORE ATTRACTIVE CARD */}
+        <div className="mt-12 max-w-4xl w-full bg-white/80 backdrop-blur-xl p-8 md:p-12 rounded-3xl border border-slate-200 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-left">
+          <h2 className="text-xl md:text-2xl font-bold mb-4 text-slate-900">
             What has happened so far?
           </h2>
 
-          <p className="text-gray-700 leading-relaxed text-sm md:text-base">
+          <p className="text-slate-700 leading-relaxed text-base md:text-lg font-medium">
             Welcome to my page. This space highlights my professional journey so far, along with experiences that have shaped how I think and work. Explore to learn more about the path I’ve taken.
           </p>
         </div>
       </section>
 
-      <div className="border-t-2 border-black w-full"></div>
-
-      {/* ABOUT */}
-      <section className="px-6 py-12 md:py-16 text-center">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4 md:mb-6">
+      {/* ABOUT SECTION - Solid Line Divider */}
+      <section className="px-6 py-16 text-center relative border-t border-slate-300">
+        {/* WIDER, MORE ATTRACTIVE CARD */}
+        <div className="max-w-4xl mx-auto bg-white/80 backdrop-blur-xl p-10 md:p-14 rounded-3xl border border-slate-200 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-slate-900">
             About Me
           </h2>
-          <p className="text-gray-800 leading-relaxed text-sm md:text-base">
+          <p className="text-slate-700 leading-relaxed text-base md:text-lg font-medium">
             I am a technically grounded professional with experience working close to large-scale consumer products at Amazon, focusing on reliability, quality, and operational excellence. My background spans application engineering, product support, and QA, where I worked cross-functionally to improve systems, processes, and user-facing experiences. Through metrics, dashboards, and release ownership, I learned how product decisions impact customers, teams, and long-term outcomes. I am now transitioning into product management, aiming to build thoughtful, data-informed products that solve real user problems at scale.
           </p>
         </div>
       </section>
 
-      <div className="border-t-2 border-black w-full"></div>
-
-      {/* EXPERTISE SECTION */}
-      <section className="px-6 py-12 md:py-16">
+      {/* EXPERTISE SECTION - Solid Line Divider */}
+      <section className="px-6 py-16 relative border-t border-slate-300">
         <div className="max-w-6xl mx-auto">
 
-          <h2 className="text-2xl md:text-3xl font-semibold text-center mb-10">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-12 text-slate-900">
             My Expertise
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-14 gap-y-10">
             {expertise.map((section) => (
-              <div key={section.title}>
-                <h3 className="text-base font-semibold mb-4">
+              <div key={section.title} className="bg-white/70 backdrop-blur-xl p-6 md:p-8 rounded-2xl border border-slate-200 shadow-md hover:shadow-lg transition-shadow duration-300">
+                <h3 className="text-lg font-bold mb-5 text-slate-900 tracking-wide">
                   {section.title}
                 </h3>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 gap-3">
                   {section.skills.map((skill) => (
-                    <div key={skill.name} className="relative">
-                      <div
+                    <div key={skill.name} className="flex flex-col">
+                      {/* ADDED cursor-pointer */}
+                      <button
                         onClick={() =>
                           setActiveSkill(
                             activeSkill === skill.name ? null : skill.name
                           )
                         }
-                        className="border border-black px-3 h-[44px] flex items-center justify-center bg-white text-[12px] font-medium whitespace-nowrap overflow-hidden text-ellipsis cursor-pointer hover:bg-gray-100 transition"
+                        className={`cursor-pointer flex justify-between items-center w-full text-left px-5 py-4 rounded-xl transition-all duration-300 border ${
+                          activeSkill === skill.name 
+                            ? "bg-white border-blue-200 shadow-sm" 
+                            : "bg-white/90 border-slate-200 hover:bg-white hover:border-slate-300"
+                        }`}
                       >
-                        {skill.name}
-                      </div>
+                        <span className="text-sm font-semibold text-slate-800">{skill.name}</span>
+                        <span className={`text-slate-500 font-bold ml-4 transition-transform duration-300 ${activeSkill === skill.name ? "rotate-180 text-blue-500" : "rotate-0"}`}>
+                          +
+                        </span>
+                      </button>
 
-                      {activeSkill === skill.name && (
-                        <div className="absolute z-10 mt-2 p-4 bg-white border border-black text-sm shadow-md w-full">
+                      {/* Expanding Content */}
+                      <div 
+                        className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                          activeSkill === skill.name ? "max-h-[300px] opacity-100 mt-2" : "max-h-0 opacity-0"
+                        }`}
+                      >
+                        <div className="px-5 py-4 bg-white/95 backdrop-blur-md border border-slate-200 rounded-xl text-sm text-slate-700 font-medium leading-relaxed shadow-inner">
                           {skill.desc}
                         </div>
-                      )}
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -181,22 +192,6 @@ export default function Home() {
 
         </div>
       </section>
-
-      {/* FOOTER */}
-      <footer className="border-t-2 border-black py-6 px-6 mt-auto">
-        <div className="max-w-5xl mx-auto flex flex-col gap-3 md:flex-row md:justify-between items-center text-sm font-medium">
-          <div>Phone: +91-9962066719</div>
-          <div>Email: krishnaparthasarathy.1@gmail.com</div>
-          <div className="flex gap-4">
-            <a href="https://www.linkedin.com/in/krishnakp19/" target="_blank">
-              LinkedIn
-            </a>
-            <a href="https://github.com/krishKp19" target="_blank">
-              GitHub
-            </a>
-          </div>
-        </div>
-      </footer>
 
     </main>
   );
