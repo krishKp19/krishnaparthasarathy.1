@@ -108,7 +108,7 @@ export default function Home() {
         </h1>
 
         <p className="text-base md:text-xl text-slate-700 max-w-2xl font-medium leading-relaxed">
-          Infrastructure Strategy & Cloud Product Leader | ex-Amazon <br className="hidden md:block" /> Driving reliability, cost optimization & cross-functional outcomes.
+          Infrastructure & Cloud Strategy Professional | ex-Amazon <br className="hidden md:block" /> Driving reliability, cost optimization & cross-functional outcomes.
         </p>
 
         {/* WIDER, MORE ATTRACTIVE CARD */}
