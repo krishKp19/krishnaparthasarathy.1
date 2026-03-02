@@ -9,12 +9,13 @@ export default function Work() {
 
         <div className="space-y-10">
           {/* ROLE 1 */}
-          <div className="bg-white/80 backdrop-blur-xl p-8 md:p-12 rounded-3xl border border-slate-200 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <div className="bg-white p-8 md:p-12 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300">
             <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-6">
               <h2 className="text-xl md:text-2xl font-bold text-slate-900">
                 Software Support Engineer – II, Amazon India Pvt. Ltd.
               </h2>
-              <span className="text-sm font-bold text-slate-500 mt-3 md:mt-0 whitespace-nowrap bg-white/60 px-4 py-1.5 rounded-full border border-slate-200 shadow-sm">
+              {/* CRISP DATE BADGE */}
+              <span className="text-sm font-bold text-slate-700 mt-3 md:mt-0 whitespace-nowrap bg-slate-50 px-4 py-1.5 rounded-full border border-slate-200 shadow-sm">
                 Oct 2022 – Apr 2025
               </span>
             </div>
@@ -23,7 +24,7 @@ export default function Work() {
               Worked on the Books Detail Pages platform - a high-traffic, customer-facing surface operating at global scale. <strong>Owned release governance, reliability, monitoring strategy, and infrastructure optimization</strong> while partnering with engineering, QA, and business stakeholders. Over time, transitioned from execution-focused delivery to driving operational strategy, cost discipline, and data-backed decision-making across the platform.
             </p>
 
-            <h3 className="font-bold mb-4 text-slate-900 tracking-wide uppercase text-sm">
+            <h3 className="font-bold mb-4 text-slate-900 tracking-wide uppercase text-sm border-b border-slate-100 pb-2">
               Key contributions
             </h3>
 
@@ -56,12 +57,13 @@ export default function Work() {
           </div>
 
           {/* ROLE 2 */}
-          <div className="bg-white/80 backdrop-blur-xl p-8 md:p-12 rounded-3xl border border-slate-200 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <div className="bg-white p-8 md:p-12 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300">
             <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-6">
               <h2 className="text-xl md:text-2xl font-bold text-slate-900">
                 Device Associate, Amazon India Pvt Ltd.
               </h2>
-              <span className="text-sm font-bold text-slate-500 mt-3 md:mt-0 whitespace-nowrap bg-white/60 px-4 py-1.5 rounded-full border border-slate-200 shadow-sm">
+              {/* CRISP DATE BADGE */}
+              <span className="text-sm font-bold text-slate-700 mt-3 md:mt-0 whitespace-nowrap bg-slate-50 px-4 py-1.5 rounded-full border border-slate-200 shadow-sm">
                 March 2021 - October 2022
               </span>
             </div>
@@ -70,7 +72,7 @@ export default function Work() {
               Worked as part of the Amazon WebView (AWV) QA team, a core platform product powering web-based experiences across Fire tablets, Fire TV, Fire Stick, and Echo devices. AWV enabled critical use cases such as video playback, embedded web pages, and captive portal logins, making reliability and performance essential to the end-user experience. I contributed as both a <strong>manual and automation tester, ensuring product quality across diverse devices and release cycles</strong>.
             </p>
 
-            <h3 className="font-bold mb-4 text-slate-900 tracking-wide uppercase text-sm">
+            <h3 className="font-bold mb-4 text-slate-900 tracking-wide uppercase text-sm border-b border-slate-100 pb-2">
               Key contributions
             </h3>
 

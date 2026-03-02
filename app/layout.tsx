@@ -13,17 +13,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" style={{ colorScheme: 'light' }}>
-      {/* We added 'flex flex-col' to the body so it handles vertical spacing, 
-        allowing the footer to always be pushed to the bottom.
-      */}
       <body className="relative bg-slate-50 text-slate-900 antialiased font-sans min-h-screen flex flex-col overflow-x-hidden">
 
-        {/* AMBIENT MESH BACKGROUND ORBS */}
-        <div className="fixed top-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-blue-100/60 blur-[120px] pointer-events-none -z-10 animate-pulse" style={{ animationDuration: '8s' }}></div>
-        <div className="fixed bottom-[-10%] right-[-10%] w-[60vw] h-[60vw] rounded-full bg-slate-200/60 blur-[140px] pointer-events-none -z-10 animate-pulse" style={{ animationDuration: '12s' }}></div>
+        {/* SUBTLE AMBIENT ORBS - Dialed back for optimal brightness */}
+        <div className="fixed top-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-blue-100/40 blur-[120px] pointer-events-none -z-10 animate-pulse" style={{ animationDuration: '8s' }}></div>
+        <div className="fixed bottom-[-10%] right-[-10%] w-[60vw] h-[60vw] rounded-full bg-slate-200/50 blur-[140px] pointer-events-none -z-10 animate-pulse" style={{ animationDuration: '12s' }}></div>
 
-        {/* FROSTED GLASS HEADER */}
-        <header className="sticky top-0 z-50 flex flex-col md:flex-row justify-between items-center px-6 md:px-12 py-5 bg-white/80 backdrop-blur-xl border-b border-slate-200 shadow-sm">
+        {/* OPTIMAL HEADER */}
+        <header className="sticky top-0 z-50 flex flex-col md:flex-row justify-between items-center px-6 md:px-12 py-5 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
           {/* LEFT — LOGOS */}
           <div className="flex items-center gap-5 mb-4 md:mb-0">
             <img
@@ -31,6 +28,8 @@ export default function RootLayout({
               alt="Amazon"
               className="h-6 md:h-7 w-auto object-contain"
             />
+            {/* Added a subtle vertical divider between logos like in your screenshot */}
+            <div className="h-6 w-px bg-slate-300 hidden md:block"></div>
             <img
               src="/greatlakes.png"
               alt="Great Lakes"
@@ -38,42 +37,50 @@ export default function RootLayout({
             />
           </div>
 
-          {/* RIGHT — NAVIGATION */}
-          <nav className="flex flex-wrap justify-center md:justify-end gap-6 text-sm font-semibold text-slate-800">
-            <Link href="/" className="hover:text-blue-600 transition-colors duration-300">
+          {/* RIGHT — NAVIGATION WITH ANIMATED UNDERLINE */}
+          <nav className="flex flex-wrap justify-center md:justify-end gap-6 text-sm font-bold text-slate-700">
+            {/* The group class and the absolute span create the underline effect */}
+            <Link href="/" className="relative group hover:text-blue-600 transition-colors duration-300 py-1">
               Home
+              <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
             </Link>
-            <Link href="/work" className="hover:text-blue-600 transition-colors duration-300">
+            <Link href="/work" className="relative group hover:text-blue-600 transition-colors duration-300 py-1">
               Work Experience
+              <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
             </Link>
-            <Link href="/education" className="hover:text-blue-600 transition-colors duration-300">
+            <Link href="/education" className="relative group hover:text-blue-600 transition-colors duration-300 py-1">
               Education
+              <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
             </Link>
-            <Link href="/projects-training" className="hover:text-blue-600 transition-colors duration-300">
+            <Link href="/projects-training" className="relative group hover:text-blue-600 transition-colors duration-300 py-1">
               Projects
+              <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
             </Link>
-            <Link href="/extracurriculars" className="hover:text-blue-600 transition-colors duration-300">
+            <Link href="/extracurriculars" className="relative group hover:text-blue-600 transition-colors duration-300 py-1">
               Extra-Curriculars
+              <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </nav>
         </header>
 
-        {/* MAIN CONTENT (flex-grow pushes the footer down) */}
+        {/* MAIN CONTENT */}
         <main className="relative z-10 flex-grow">
           {children}
         </main>
 
-        {/* GLOBAL UNIFIED FOOTER */}
-        <footer className="relative z-20 py-8 px-6 bg-white/90 backdrop-blur-xl border-t border-slate-300 shadow-[0_-4px_20px_rgba(0,0,0,0.02)]">
-          <div className="max-w-6xl mx-auto flex flex-col gap-4 md:flex-row md:justify-between items-center text-sm font-medium text-slate-700">
+        {/* OPTIMAL FOOTER */}
+        <footer className="relative z-20 py-8 px-6 bg-white border-t border-slate-200 shadow-[0_-2px_10px_rgba(0,0,0,0.02)]">
+          <div className="max-w-6xl mx-auto flex flex-col gap-4 md:flex-row md:justify-between items-center text-sm font-bold text-slate-600">
             <div>Phone: +91-9962066719</div>
             <div>Email: krishnaparthasarathy.1@gmail.com</div>
             <div className="flex gap-8">
-              <a href="https://www.linkedin.com/in/krishnakp19/" target="_blank" className="hover:text-blue-600 transition-colors duration-300">
+              <a href="https://www.linkedin.com/in/krishnakp19/" target="_blank" className="relative group hover:text-blue-600 transition-colors duration-300 py-1">
                 LinkedIn
+                <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
               </a>
-              <a href="https://github.com/krishKp19" target="_blank" className="hover:text-blue-600 transition-colors duration-300">
+              <a href="https://github.com/krishKp19" target="_blank" className="relative group hover:text-blue-600 transition-colors duration-300 py-1">
                 GitHub
+                <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
               </a>
             </div>
           </div>

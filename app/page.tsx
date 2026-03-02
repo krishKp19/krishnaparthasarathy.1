@@ -55,13 +55,13 @@ export default function Home() {
           Krishna Parthasarathy
         </h1>
 
-        {/* UPDATED: Centered max-w-4xl block and removed the extra '|' for perfect 2-line wrapping */}
         <p className="text-base md:text-xl text-slate-700 max-w-4xl mx-auto font-medium leading-relaxed">
-          Product Professional with a strong foundation in infrastructure and platform reliability | ex-Amazon | Focused on building reliable products, optimizing costs, and working closely across teams.
+          Product Professional with a strong foundation in infrastructure and platform reliability | ex-Amazon <br className="hidden md:block" /> 
+          Focused on building reliable products, optimizing costs, and working closely across teams.
         </p>
 
         {/* WIDER, MORE ATTRACTIVE CARD */}
-        <div className="mt-12 max-w-4xl w-full bg-white/80 backdrop-blur-xl p-8 md:p-12 rounded-3xl border border-slate-200 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-left">
+        <div className="mt-12 max-w-4xl w-full bg-white p-8 md:p-12 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 text-left">
           <h2 className="text-xl md:text-2xl font-bold mb-4 text-slate-900">
             What has happened so far?
           </h2>
@@ -73,38 +73,38 @@ export default function Home() {
       </section>
 
       {/* ABOUT SECTION - Solid Line Divider */}
-      <section className="px-6 py-16 text-center relative border-t border-slate-300">
-        {/* WIDER, MORE ATTRACTIVE CARD */}
-        <div className="max-w-4xl mx-auto bg-white/80 backdrop-blur-xl p-10 md:p-14 rounded-3xl border border-slate-200 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+      <section className="px-6 py-16 text-center relative border-t border-slate-200 bg-white">
+        <div className="max-w-4xl mx-auto bg-slate-50 p-10 md:p-14 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
           <h2 className="text-2xl md:text-3xl font-bold mb-6 text-slate-900">
             About Me
           </h2>
-          <p className="text-slate-700 leading-relaxed text-base md:text-lg font-medium">
+          <p className="text-slate-700 leading-relaxed text-base md:text-lg font-medium text-justify">
             I am a technically grounded professional with experience working close to large-scale consumer products at Amazon, focusing on reliability, quality, and operational excellence. My background spans across application engineering, product support, and QA, where I worked cross-functionally to improve systems, processes, and user-facing experiences. Through metrics, dashboards, and release ownership, I learned how product decisions impact customers, teams, and long-term outcomes. I am now transitioning into product management, aiming to build thoughtful, data-informed products that solve real user problems at scale.
           </p>
         </div>
       </section>
 
-      {/* EXPERTISE SECTION - Simplified to Static List */}
-      <section className="px-6 py-16 relative border-t border-slate-300">
+      {/* EXPERTISE SECTION */}
+      <section className="px-6 py-16 relative border-t border-slate-200">
         <div className="max-w-6xl mx-auto">
 
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-12 text-slate-900">
             My Expertise
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-14 gap-y-10 w-full mb-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-14 gap-y-10 w-full mb-4">
             {expertise.map((section) => (
-              <div key={section.title} className="bg-white/70 backdrop-blur-xl p-6 md:p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-300">
-                <h3 className="text-lg font-bold mb-5 text-slate-900 tracking-wide">
+              <div key={section.title} className="bg-white p-6 md:p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-300">
+                <h3 className="text-lg font-bold mb-5 text-slate-900 tracking-wide border-b border-slate-100 pb-3">
                   {section.title}
                 </h3>
 
                 <div className="grid grid-cols-1 gap-3">
                   {section.skills.map((skill, index) => (
+                    // STRONGER CONTRAST ON SKILL PILLS
                     <div 
                       key={index} 
-                      className="w-full text-left px-5 py-4 rounded-xl bg-white/90 border border-slate-200 shadow-sm"
+                      className="w-full text-left px-5 py-4 rounded-xl bg-slate-50 border border-slate-200 shadow-sm hover:bg-slate-100 transition-colors"
                     >
                       <span className="text-sm font-semibold text-slate-800">{skill}</span>
                     </div>
@@ -114,8 +114,8 @@ export default function Home() {
             ))}
           </div>
 
-          {/* DIRECTIONAL PROMPT - Perfectly left-aligned flush with the card */}
-          <div className="w-full flex justify-start">
+          {/* DIRECTIONAL PROMPT */}
+          <div className="w-full flex justify-start pl-2">
             <p className="text-sm md:text-base text-slate-500 italic font-medium">
               Refer Work Experience and Projects for more details regarding this.
             </p>

@@ -9,68 +9,67 @@ export default function Education() {
 
         <div className="space-y-10">
           {/* PGPM */}
-          <div className="bg-white/80 backdrop-blur-xl p-8 md:p-12 rounded-3xl border border-slate-200 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <div className="bg-white p-8 md:p-12 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300">
             <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-6">
               <h2 className="text-xl md:text-2xl font-bold text-slate-900 md:max-w-[70%]">
                 PGPM, Great Lakes Institute of Management, Chennai.
               </h2>
-              <span className="text-sm font-bold text-slate-500 mt-3 md:mt-0 whitespace-nowrap bg-white/60 px-4 py-1.5 rounded-full border border-slate-200 shadow-sm">
+              <span className="text-sm font-bold text-slate-700 mt-3 md:mt-0 whitespace-nowrap bg-slate-50 px-4 py-1.5 rounded-full border border-slate-200 shadow-sm">
                 May 2025 - April 2026
               </span>
             </div>
 
-            {/* COMBINED INTRO AND MAJOR/CGPA */}
-            <p className="text-slate-700 leading-relaxed text-base font-medium mb-8">
-              Pursuing a  one-year, full-time management program majoring in <strong>Finance and Strategy Consulting</strong> with a <strong>CGPA of 3.20/4.00 (In-Progress)</strong> after stepping away from four years of industry experience to deepen my understanding of how businesses operate end to end. The program has strengthened my foundation across core areas such as operations, statistics, finance, and marketing, while sharpening structured thinking and decision-making under constraints. Alongside academics, I actively collaborate with peers on hands-on projects and experiments, building and exploring ideas beyond the classroom. 
+            <p className="text-slate-700 leading-relaxed text-base font-medium mb-10">
+              Pursuing a one-year, full-time management program majoring in <strong>Finance and Strategy Consulting</strong> with a <strong>CGPA of 3.20/4.00 (In-Progress)</strong> after stepping away from four years of industry experience to deepen my understanding of how businesses operate end to end. The program has strengthened my foundation across core areas such as operations, statistics, finance, and marketing, while sharpening structured thinking and decision-making under constraints. Alongside academics, I actively collaborate with peers on hands-on projects and experiments, building and exploring ideas beyond the classroom. 
             </p>
 
             {/* FINANCE SECTION */}
-            <h3 className="font-bold mb-4 text-slate-900 tracking-wide uppercase text-sm">
-              Finance:
+            <h3 className="font-bold mb-4 text-slate-900 tracking-wide uppercase text-sm border-b border-slate-100 pb-2">
+              Finance
             </h3>
-            <ul className="list-disc pl-6 space-y-3 text-slate-700 font-medium leading-relaxed mb-8">
+            <ul className="list-disc pl-6 space-y-3 text-slate-700 font-medium leading-relaxed mb-10">
               <li>
-                Applied financial modeling frameworks including <span className="font-bold text-slate-900">DCF valuation, CAPM-based cost of capital estimation</span>, and integrated <span className="font-bold text-slate-900">3-statement modeling</span> to evaluate investment and expansion decisions.
+                Applied financial modeling frameworks including <strong className="text-slate-900">DCF valuation, CAPM-based cost of capital estimation</strong>, and integrated <strong className="text-slate-900">3-statement modeling</strong> to evaluate investment and expansion decisions.
               </li>
               <li>
-                Built structured valuation and risk models covering <span className="font-bold text-slate-900">portfolio optimization, credit risk assessment</span>, and capital allocation trade-offs using real-world datasets.
+                Built structured valuation and risk models covering <strong className="text-slate-900">portfolio optimization, credit risk assessment</strong>, and capital allocation trade-offs using real-world datasets.
               </li>
               <li>
-                Developed working knowledge of <span className="font-bold text-slate-900">derivatives, options, futures, fixed-income instruments</span>, and bond pricing to understand risk exposure and hedging strategies.
+                Developed working knowledge of <strong className="text-slate-900">derivatives, options, futures, fixed-income instruments</strong>, and bond pricing to understand risk exposure and hedging strategies.
               </li>
               <li>
-                Practiced scenario-based capital planning and liquidity assessment through <span className="font-bold text-slate-900">credit risk modeling</span> and sensitivity analysis.
+                Practiced scenario-based capital planning and liquidity assessment through <strong className="text-slate-900">credit risk modeling</strong> and sensitivity analysis.
               </li>
             </ul>
 
             {/* STRATEGY SECTION */}
-            <h3 className="font-bold mb-4 text-slate-900 tracking-wide uppercase text-sm">
-              Strategy & Consulting:
+            <h3 className="font-bold mb-4 text-slate-900 tracking-wide uppercase text-sm border-b border-slate-100 pb-2">
+              Strategy & Consulting
             </h3>
             <ul className="list-disc pl-6 space-y-3 text-slate-700 font-medium leading-relaxed">
               <li>
-                Applied structured strategy frameworks such as <span className="font-bold text-slate-900">Strategy Diamond, Three Horizons (3-Box Framework), and Business Model Canvas</span> to evaluate growth, diversification, and scaling decisions.
+                Applied structured strategy frameworks such as <strong className="text-slate-900">Strategy Diamond, Three Horizons (3-Box Framework), and Business Model Canvas</strong> to evaluate growth, diversification, and scaling decisions.
               </li>
               <li>
-                Conducted unstructured problem-solving exercises using <span className="font-bold text-slate-900">hypothesis-driven approaches</span> to break down ambiguous business challenges.
+                Conducted unstructured problem-solving exercises using <strong className="text-slate-900">hypothesis-driven approaches</strong> to break down ambiguous business challenges.
               </li>
               <li>
-                Developed business proposals and <span className="font-bold text-slate-900">go-to-market plans</span> through case-based simulations and peer-led strategy workshops.
+                Developed business proposals and <strong className="text-slate-900">go-to-market plans</strong> through case-based simulations and peer-led strategy workshops.
               </li>
               <li>
-                Studied digital transformation and <span className="font-bold text-slate-900">change management principles</span> to understand how organizations scale operations while maintaining execution discipline.
+                Studied digital transformation and <strong className="text-slate-900">change management principles</strong> to understand how organizations scale operations while maintaining execution discipline.
               </li>
             </ul>
           </div>
 
           {/* B.E */}
-          <div className="bg-white/80 backdrop-blur-xl p-8 md:p-12 rounded-3xl border border-slate-200 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <div className="bg-white p-8 md:p-12 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300">
             <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
               <h2 className="text-xl md:text-2xl font-bold text-slate-900 md:max-w-[70%]">
                 Bachelors of Engineering, <br className="hidden md:block" />
                 Velammal Engineering College, Chennai.
               </h2>
-              <span className="text-sm font-bold text-slate-500 mt-3 md:mt-0 whitespace-nowrap bg-white/60 px-4 py-1.5 rounded-full border border-slate-200 shadow-sm">
+              <span className="text-sm font-bold text-slate-700 mt-3 md:mt-0 whitespace-nowrap bg-slate-50 px-4 py-1.5 rounded-full border border-slate-200 shadow-sm">
                 July 2016 - November 2020
               </span>
             </div>
@@ -80,7 +79,7 @@ export default function Education() {
             </p>
 
             <p className="text-slate-700 leading-relaxed text-base font-medium">
-              Completed a four-year undergraduate program in Computer Science and Engineering with a strong foundation in core engineering and computer science principles <span className="font-bold text-slate-900">(CGPA: 7.85/10.00)</span>. The curriculum combined analytical rigor with structured problem-solving, covering Engineering Mathematics, Probability and Queuing Theory, and engineering graphics, alongside core computer science subjects such as compiler design, theory of computation, and discrete mathematics. This academic grounding shaped how I approach complex systems, think logically, and break down problems - skills that continue to influence my work across engineering, product, and business contexts.
+              Completed a four-year undergraduate program in Computer Science and Engineering with a strong foundation in core engineering and computer science principles <strong className="text-slate-900">(CGPA: 7.85/10.00)</strong>. The curriculum combined analytical rigor with structured problem-solving, covering Engineering Mathematics, Probability and Queuing Theory, and engineering graphics, alongside core computer science subjects such as compiler design, theory of computation, and discrete mathematics. This academic grounding shaped how I approach complex systems, think logically, and break down problems - skills that continue to influence my work across engineering, product, and business contexts.
             </p>
           </div>
         </div>
