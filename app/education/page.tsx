@@ -19,23 +19,46 @@ export default function Education() {
               </span>
             </div>
 
+            {/* COMBINED INTRO AND MAJOR/CGPA */}
             <p className="text-slate-700 leading-relaxed text-base font-medium mb-8">
-              Pursuing a rigorous one-year, full-time management program after stepping away from four years of industry experience to deepen my understanding of how businesses operate end to end. The program has strengthened my foundation across core areas such as operations, statistics, finance, and marketing, while sharpening structured thinking and decision-making under constraints. Alongside academics, I actively collaborate with peers on hands-on projects and experiments, building and exploring ideas beyond the classroom.
+              Pursuing a  one-year, full-time management program majoring in <strong>Finance and Strategy Consulting</strong> with a <strong>CGPA of 3.20/4.00 (In-Progress)</strong> after stepping away from four years of industry experience to deepen my understanding of how businesses operate end to end. The program has strengthened my foundation across core areas such as operations, statistics, finance, and marketing, while sharpening structured thinking and decision-making under constraints. Alongside academics, I actively collaborate with peers on hands-on projects and experiments, building and exploring ideas beyond the classroom. 
             </p>
 
+            {/* FINANCE SECTION */}
             <h3 className="font-bold mb-4 text-slate-900 tracking-wide uppercase text-sm">
-              Focus areas
+              Finance:
             </h3>
+            <ul className="list-disc pl-6 space-y-3 text-slate-700 font-medium leading-relaxed mb-8">
+              <li>
+                Applied financial modeling frameworks including <span className="font-bold text-slate-900">DCF valuation, CAPM-based cost of capital estimation</span>, and integrated <span className="font-bold text-slate-900">3-statement modeling</span> to evaluate investment and expansion decisions.
+              </li>
+              <li>
+                Built structured valuation and risk models covering <span className="font-bold text-slate-900">portfolio optimization, credit risk assessment</span>, and capital allocation trade-offs using real-world datasets.
+              </li>
+              <li>
+                Developed working knowledge of <span className="font-bold text-slate-900">derivatives, options, futures, fixed-income instruments</span>, and bond pricing to understand risk exposure and hedging strategies.
+              </li>
+              <li>
+                Practiced scenario-based capital planning and liquidity assessment through <span className="font-bold text-slate-900">credit risk modeling</span> and sensitivity analysis.
+              </li>
+            </ul>
 
+            {/* STRATEGY SECTION */}
+            <h3 className="font-bold mb-4 text-slate-900 tracking-wide uppercase text-sm">
+              Strategy & Consulting:
+            </h3>
             <ul className="list-disc pl-6 space-y-3 text-slate-700 font-medium leading-relaxed">
               <li>
-                Majoring in <span className="font-bold text-slate-900">Finance and Consulting</span> with CGPA of 3.22/4.00 (Pursuing)
+                Applied structured strategy frameworks such as <span className="font-bold text-slate-900">Strategy Diamond, Three Horizons (3-Box Framework), and Business Model Canvas</span> to evaluate growth, diversification, and scaling decisions.
               </li>
               <li>
-                Applying business concepts through case discussions, projects, and peer-led initiatives.
+                Conducted unstructured problem-solving exercises using <span className="font-bold text-slate-900">hypothesis-driven approaches</span> to break down ambiguous business challenges.
               </li>
               <li>
-                Combining technical experience with business judgment to approach problems more holistically.
+                Developed business proposals and <span className="font-bold text-slate-900">go-to-market plans</span> through case-based simulations and peer-led strategy workshops.
+              </li>
+              <li>
+                Studied digital transformation and <span className="font-bold text-slate-900">change management principles</span> to understand how organizations scale operations while maintaining execution discipline.
               </li>
             </ul>
           </div>

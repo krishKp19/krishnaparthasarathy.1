@@ -1,93 +1,41 @@
 "use client";
 
-import { useState } from "react";
-
 export default function Home() {
-  const [activeSkill, setActiveSkill] = useState<string | null>(null);
-
   const expertise = [
     {
       title: "Product & Strategy",
       skills: [
-        {
-          name: "Product Lifecycle Management (PLM)",
-          desc: "Owned end-to-end release lifecycle for 5+ production pipelines, successfully executing 200+ zero-downtime releases and saving 39+ SDE weeks.",
-        },
-        {
-          name: "Requirement Gathering",
-          desc: "Translated stakeholder inputs across Dev, QA, and Leadership into execution plans for resolving 2,000+ tickets, resolving 70% of queue backlog.",
-        },
-        {
-          name: "Go-To-Market (GTM) Strategy",
-          desc: "Designed a white paper study focussing on youth hybrid healthcare GTM model targeting 40M+ Indian college students through Apollo 24/7 integration strategy.",
-        },
-        {
-          name: "Data-Driven Decision Making",
-          desc: "Built composite satisfaction indices and comparative student-segment analysis using 150+ survey responses and app review data to drive strategic recommendations for Apollo 24/7 App.",
-        },
+        "Product Lifecycle Management (PLM)",
+        "Requirement Gathering",
+        "Go-To-Market (GTM) Strategy",
+        "Data-Driven Decision Making",
       ],
     },
     {
       title: "Infrastructure & Platform Engineering",
       skills: [
-        {
-          name: "Cloud Infrastructure (AWS)",
-          desc: "Led infra deprecations and pipeline consolidation reducing AWS costs by 50% while eliminating 100+ security risks.",
-        },
-        {
-          name: "Infrastructure Architecture & System Design",
-          desc: "Architected hybrid AI financial terminal with 7-phase forensic framework reducing equity analysis time by 60% and achieving 100% service uptime.",
-        },
-        {
-          name: "DevOps & CI/CD Strategy",
-          desc: "Executed 91+ MCMs and automated multi-stage promotion workflows improving deployment velocity and eliminating recurring manual merge risks.",
-        },
-        {
-          name: "Security & Risk Management (DevSecOps)",
-          desc: "Mitigated 500+ infrastructure risks and reduced NodeJS, Java and Software vulnerabilities by 56% across production pipelines.",
-        },
+        "Cloud Infrastructure (AWS)",
+        "Infrastructure Architecture & System Design",
+        "DevOps & CI/CD Strategy",
+        "Security & Risk Management (DevSecOps)",
       ],
     },
     {
       title: "Analytics & Optimization",
       skills: [
-        {
-          name: "SQL",
-          desc: "Built financial and portfolio modeling engines integrating 9-year datasets, enabling optimized portfolio strategies delivering 176% realized return in test phase.",
-        },
-        {
-          name: "Power BI",
-          desc: "Consolidated fragmented monitoring systems into a single performance dashboard integrating 15+ features improving anomaly detection and saving 4+ SDE weeks annually.",
-        },
-        {
-          name: "A/B Testing",
-          desc: "Implemented quantitative signal scoring and risk-weighted frameworks replacing evaluation of 20+ metrics with a unified Stock Readiness Score, improving screening speed 5x.",
-        },
-        {
-          name: "Cloud Cost Optimization (FinOps)",
-          desc: "Executed infrastructure rationalization and stale pipeline deprecations achieving sustained 50% cloud cost reduction and improved infra ROI.",
-        },
+        "SQL",
+        "Power BI",
+        "A/B Testing",
+        "Cloud Cost Optimization (FinOps)",
       ],
     },
     {
       title: "Collaboration & Modern Delivery",
       skills: [
-        {
-          name: "Stakeholder Management",
-          desc: "Coordinated resolution of 50+ release blockers across multiple teams ensuring 100% on-schedule deployments.",
-        },
-        {
-          name: "Agile Methodologies",
-          desc: "Delivered 3 production releases per week while maintaining zero major post-release failures, designed schedules and release cadence for cross-functional teams ensuring inputs from multiple stakeholders.",
-        },
-        {
-          name: "User Experience (UX) Research",
-          desc: "Analyzed operational dissatisfaction themes from Google Play reviews to improve service delivery strategy for Apollo 24/7 App.",
-        },
-        {
-          name: "Generative AI (GenAI)",
-          desc: "Engineered AI-driven forensic equity terminal leveraging Gemini LLM to automate 100% of preliminary due diligence audits.",
-        },
+        "Stakeholder Management",
+        "Agile Methodologies",
+        "User Experience (UX) Research",
+        "Generative AI (GenAI)",
       ],
     },
   ];
@@ -107,8 +55,9 @@ export default function Home() {
           Krishna Parthasarathy
         </h1>
 
-        <p className="text-base md:text-xl text-slate-700 max-w-2xl font-medium leading-relaxed">
-          Infrastructure & Cloud Strategy Professional | ex-Amazon <br className="hidden md:block" /> Driving reliability, cost optimization & cross-functional outcomes.
+        {/* UPDATED: Centered max-w-4xl block and removed the extra '|' for perfect 2-line wrapping */}
+        <p className="text-base md:text-xl text-slate-700 max-w-4xl mx-auto font-medium leading-relaxed">
+          Product Professional with a strong foundation in infrastructure and platform reliability | ex-Amazon | Focused on building reliable products, optimizing costs, and working closely across teams.
         </p>
 
         {/* WIDER, MORE ATTRACTIVE CARD */}
@@ -131,12 +80,12 @@ export default function Home() {
             About Me
           </h2>
           <p className="text-slate-700 leading-relaxed text-base md:text-lg font-medium">
-            I am a technically grounded professional with experience working close to large-scale consumer products at Amazon, focusing on reliability, quality, and operational excellence. My background spans application engineering, product support, and QA, where I worked cross-functionally to improve systems, processes, and user-facing experiences. Through metrics, dashboards, and release ownership, I learned how product decisions impact customers, teams, and long-term outcomes. I am now transitioning into product management, aiming to build thoughtful, data-informed products that solve real user problems at scale.
+            I am a technically grounded professional with experience working close to large-scale consumer products at Amazon, focusing on reliability, quality, and operational excellence. My background spans across application engineering, product support, and QA, where I worked cross-functionally to improve systems, processes, and user-facing experiences. Through metrics, dashboards, and release ownership, I learned how product decisions impact customers, teams, and long-term outcomes. I am now transitioning into product management, aiming to build thoughtful, data-informed products that solve real user problems at scale.
           </p>
         </div>
       </section>
 
-      {/* EXPERTISE SECTION - Solid Line Divider */}
+      {/* EXPERTISE SECTION - Simplified to Static List */}
       <section className="px-6 py-16 relative border-t border-slate-300">
         <div className="max-w-6xl mx-auto">
 
@@ -144,50 +93,32 @@ export default function Home() {
             My Expertise
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-14 gap-y-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-14 gap-y-10 w-full mb-6">
             {expertise.map((section) => (
-              <div key={section.title} className="bg-white/70 backdrop-blur-xl p-6 md:p-8 rounded-2xl border border-slate-200 shadow-md hover:shadow-lg transition-shadow duration-300">
+              <div key={section.title} className="bg-white/70 backdrop-blur-xl p-6 md:p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-300">
                 <h3 className="text-lg font-bold mb-5 text-slate-900 tracking-wide">
                   {section.title}
                 </h3>
 
                 <div className="grid grid-cols-1 gap-3">
-                  {section.skills.map((skill) => (
-                    <div key={skill.name} className="flex flex-col">
-                      {/* ADDED cursor-pointer */}
-                      <button
-                        onClick={() =>
-                          setActiveSkill(
-                            activeSkill === skill.name ? null : skill.name
-                          )
-                        }
-                        className={`cursor-pointer flex justify-between items-center w-full text-left px-5 py-4 rounded-xl transition-all duration-300 border ${
-                          activeSkill === skill.name 
-                            ? "bg-white border-blue-200 shadow-sm" 
-                            : "bg-white/90 border-slate-200 hover:bg-white hover:border-slate-300"
-                        }`}
-                      >
-                        <span className="text-sm font-semibold text-slate-800">{skill.name}</span>
-                        <span className={`text-slate-500 font-bold ml-4 transition-transform duration-300 ${activeSkill === skill.name ? "rotate-180 text-blue-500" : "rotate-0"}`}>
-                          +
-                        </span>
-                      </button>
-
-                      {/* Expanding Content */}
-                      <div 
-                        className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                          activeSkill === skill.name ? "max-h-[300px] opacity-100 mt-2" : "max-h-0 opacity-0"
-                        }`}
-                      >
-                        <div className="px-5 py-4 bg-white/95 backdrop-blur-md border border-slate-200 rounded-xl text-sm text-slate-700 font-medium leading-relaxed shadow-inner">
-                          {skill.desc}
-                        </div>
-                      </div>
+                  {section.skills.map((skill, index) => (
+                    <div 
+                      key={index} 
+                      className="w-full text-left px-5 py-4 rounded-xl bg-white/90 border border-slate-200 shadow-sm"
+                    >
+                      <span className="text-sm font-semibold text-slate-800">{skill}</span>
                     </div>
                   ))}
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* DIRECTIONAL PROMPT - Perfectly left-aligned flush with the card */}
+          <div className="w-full flex justify-start">
+            <p className="text-sm md:text-base text-slate-500 italic font-medium">
+              Refer Work Experience and Projects for more details regarding this.
+            </p>
           </div>
 
         </div>

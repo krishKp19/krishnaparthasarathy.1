@@ -28,6 +28,9 @@ export default function ProjectsTraining() {
         "Financial Analysis",
         "Decision Framework Design",
       ],
+      link: "https://stockanalyserkp19.streamlit.app/",
+      linkText: "View Live Application",
+      linkNote: "(Revive to use)"
     },
     {
       title: "Apollo 24/7 – Youth Adoption Strategy Whitepaper Study",
@@ -51,6 +54,8 @@ export default function ProjectsTraining() {
         "Data Synthesis",
         "Strategic Framework Development",
       ],
+      link: "https://docs.google.com/document/d/1luK221vCcn_ep7PmIIlhvbl2Df37F5e4/edit?usp=sharing&ouid=109255237526964657886&rtpof=true&sd=true",
+      linkText: "Read Whitepaper"
     },
     {
       title: "Markowitz-Optimized Portfolio Modeling",
@@ -79,10 +84,22 @@ export default function ProjectsTraining() {
       title: "Advanced Financial Modeling & Algorithmic Trading",
       tagline:
         "Integrated 9-year financial model and algorithmic trading simulation.",
-      overview:
-        "Phase 1: Retail Expansion Financial Model — This project involved building a fully integrated 9-year financial model to support bank financing and a 30% equity investment proposal. Phase 2: Algorithmic Trading Simulation — This phase involved designing and backtesting two systematic trading strategies — Momentum and Mean Reversion — using a 9-year SENSEX dataset.",
-      whatIDid:
-        "Phase 1: I engineered a 108-month rolling projection that transitioned into an annual 3-statement model (Income Statement, Balance Sheet, Cash Flow). The model incorporated a mid-cycle capital injection of ₹1,200 Lakhs and accounted for overlapping depreciation schedules. I calculated WACC using CAPM (8.74%) and applied DCF valuation with a 2% terminal growth assumption. Debt Service Coverage Ratio (DSCR) was modeled across the loan lifecycle to assess lender safety. Phase 2: I programmed real-world exchange constraints (eliminating fractional share assumptions) and built a dual P&L tracking system applying Lower of Cost or Market accounting principles. The model tracked daily mark-to-market and calculated maximum capital drawdown to determine liquidity requirements. Sensitivity analysis was conducted using parameterized trigger adjustments.",
+
+      overview: (
+        <>
+          <span className="font-bold text-slate-900">Phase 1: Retail Expansion Financial Model:</span>  This project involved building a fully integrated 9-year financial model to support bank financing and a 30% equity investment proposal. 
+          <br /><br />
+          <span className="font-bold text-slate-900">Phase 2: Algorithmic Trading Simulation:</span> This phase involved designing and backtesting two systematic trading strategies - Momentum and Mean Reversion - using a 9-year SENSEX dataset.
+        </>
+      ),
+
+      whatIDid: (
+        <>
+          <span className="font-bold text-slate-900">Phase 1:</span> I engineered a 108-month rolling projection that transitioned into an annual 3-statement model (Income Statement, Balance Sheet, Cash Flow). The model incorporated a mid-cycle capital injection of ₹1,200 Lakhs and accounted for overlapping depreciation schedules. I calculated WACC using CAPM (8.74%) and applied DCF valuation with a 2% terminal growth assumption. Debt Service Coverage Ratio (DSCR) was modeled across the loan lifecycle to assess lender safety. 
+          <br /><br />
+          <span className="font-bold text-slate-900">Phase 2:</span> I programmed real-world exchange constraints (eliminating fractional share assumptions) and built a dual P&L tracking system applying Lower of Cost or Market accounting principles. The model tracked daily mark-to-market and calculated maximum capital drawdown to determine liquidity requirements. Sensitivity analysis was conducted using parameterized trigger adjustments.
+        </>
+      ),
       impact: [
         "Valued 30% equity stake at ₹18,649 Lakhs.",
         "Demonstrated DSCR improvement to 5.18x by Year 5.",
@@ -153,21 +170,21 @@ export default function ProjectsTraining() {
                     
                     <div>
                       <h3 className="font-bold text-slate-900 mb-2 uppercase tracking-wide text-xs">
-                        Project Overview
+                        Project Overview:
                       </h3>
                       <p>{project.overview}</p>
                     </div>
 
                     <div>
                       <h3 className="font-bold text-slate-900 mb-2 uppercase tracking-wide text-xs">
-                        What I Did
+                        What I Did:
                       </h3>
                       <p>{project.whatIDid}</p>
                     </div>
 
                     <div>
                       <h3 className="font-bold text-slate-900 mb-3 uppercase tracking-wide text-xs">
-                        Impact
+                        Impact:
                       </h3>
                       <ul className="list-disc pl-6 space-y-2">
                         {project.impact.map((item, i) => (
@@ -178,7 +195,7 @@ export default function ProjectsTraining() {
 
                     <div>
                       <h3 className="font-bold text-slate-900 mb-3 uppercase tracking-wide text-xs">
-                        Skills Demonstrated
+                        Skills Demonstrated:
                       </h3>
                       <div className="flex flex-wrap gap-2 md:gap-3">
                         {project.skills.map((skill, i) => (
@@ -191,6 +208,25 @@ export default function ProjectsTraining() {
                         ))}
                       </div>
                     </div>
+
+                    {/* DYNAMIC Live App / Document Button */}
+                    {project.link && (
+                      <div className="pt-4 flex items-center gap-4 border-t border-slate-200/60 mt-6">
+                        <a 
+                          href={project.link} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="inline-block bg-slate-900 text-white font-bold text-sm px-6 py-2.5 rounded-lg hover:bg-slate-800 hover:-translate-y-0.5 transition-all duration-200 shadow-sm"
+                        >
+                          {project.linkText || "View Project"}
+                        </a>
+                        {project.linkNote && (
+                          <span className="text-slate-500 text-xs italic font-medium">
+                            {project.linkNote}
+                          </span>
+                        )}
+                      </div>
+                    )}
 
                   </div>
                 </div>
