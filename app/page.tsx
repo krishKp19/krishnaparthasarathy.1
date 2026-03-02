@@ -45,10 +45,11 @@ export default function Home() {
 
       {/* HERO SECTION */}
       <section className="flex flex-col items-center justify-center text-center px-6 py-16 md:py-20">
+        {/* UPDATED: Slightly larger profile image (w-36/h-36 on mobile, w-48/h-48 on desktop) */}
         <img
           src="/profile.jpg"
           alt="Krishna"
-          className="w-32 h-32 md:w-44 md:h-44 rounded-full object-cover mb-8 shadow-md border-4 border-white"
+          className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover mb-8 shadow-md border-4 border-white"
         />
 
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-slate-900 mb-6">
@@ -101,7 +102,6 @@ export default function Home() {
 
                 <div className="grid grid-cols-1 gap-3">
                   {section.skills.map((skill, index) => (
-                    // STRONGER CONTRAST ON SKILL PILLS
                     <div 
                       key={index} 
                       className="w-full text-left px-5 py-4 rounded-xl bg-slate-50 border border-slate-200 shadow-sm hover:bg-slate-100 transition-colors"
