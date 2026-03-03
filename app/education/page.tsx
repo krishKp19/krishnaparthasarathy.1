@@ -9,12 +9,12 @@ export default function Education() {
 
         <div className="space-y-10">
           {/* PGPM */}
-          <div className="bg-white p-8 md:p-12 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300">
+          <div className="bg-white p-8 md:p-12 rounded-3xl border border-zinc-200 shadow-sm hover:shadow-md transition-all duration-300">
             <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-6">
               <h2 className="text-xl md:text-2xl font-bold text-slate-900 md:max-w-[70%]">
                 PGPM, Great Lakes Institute of Management, Chennai.
               </h2>
-              <span className="text-sm font-bold text-slate-700 mt-3 md:mt-0 whitespace-nowrap bg-slate-50 px-4 py-1.5 rounded-full border border-slate-200 shadow-sm">
+              <span className="text-sm font-bold text-slate-700 mt-3 md:mt-0 whitespace-nowrap bg-zinc-50 px-4 py-1.5 rounded-full border border-zinc-200 shadow-sm">
                 May 2025 - April 2026
               </span>
             </div>
@@ -24,7 +24,7 @@ export default function Education() {
             </p>
 
             {/* FINANCE SECTION */}
-            <h3 className="font-bold mb-4 text-slate-900 tracking-wide uppercase text-sm border-b border-slate-100 pb-2">
+            <h3 className="font-bold mb-4 text-slate-900 tracking-wide uppercase text-sm border-b border-zinc-100 pb-2">
               Finance
             </h3>
             <ul className="list-disc pl-6 space-y-3 text-slate-700 font-medium leading-relaxed mb-10">
@@ -43,7 +43,7 @@ export default function Education() {
             </ul>
 
             {/* STRATEGY SECTION */}
-            <h3 className="font-bold mb-4 text-slate-900 tracking-wide uppercase text-sm border-b border-slate-100 pb-2">
+            <h3 className="font-bold mb-4 text-slate-900 tracking-wide uppercase text-sm border-b border-zinc-100 pb-2">
               Strategy & Consulting
             </h3>
             <ul className="list-disc pl-6 space-y-3 text-slate-700 font-medium leading-relaxed">
@@ -63,13 +63,13 @@ export default function Education() {
           </div>
 
           {/* B.E */}
-          <div className="bg-white p-8 md:p-12 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300">
+          <div className="bg-white p-8 md:p-12 rounded-3xl border border-zinc-200 shadow-sm hover:shadow-md transition-all duration-300">
             <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
               <h2 className="text-xl md:text-2xl font-bold text-slate-900 md:max-w-[70%]">
                 Bachelors of Engineering, <br className="hidden md:block" />
                 Velammal Engineering College, Chennai.
               </h2>
-              <span className="text-sm font-bold text-slate-700 mt-3 md:mt-0 whitespace-nowrap bg-slate-50 px-4 py-1.5 rounded-full border border-slate-200 shadow-sm">
+              <span className="text-sm font-bold text-slate-700 mt-3 md:mt-0 whitespace-nowrap bg-zinc-50 px-4 py-1.5 rounded-full border border-zinc-200 shadow-sm">
                 July 2016 - November 2020
               </span>
             </div>

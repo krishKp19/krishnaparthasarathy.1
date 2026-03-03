@@ -45,7 +45,6 @@ export default function Home() {
 
       {/* HERO SECTION */}
       <section className="flex flex-col items-center justify-center text-center px-6 py-16 md:py-20">
-        {/* UPDATED: Slightly larger profile image (w-36/h-36 on mobile, w-48/h-48 on desktop) */}
         <img
           src="/profile.jpg"
           alt="Krishna"
@@ -62,7 +61,7 @@ export default function Home() {
         </p>
 
         {/* WIDER, MORE ATTRACTIVE CARD */}
-        <div className="mt-12 max-w-4xl w-full bg-white p-8 md:p-12 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 text-left">
+        <div className="mt-12 max-w-4xl w-full bg-white p-8 md:p-12 rounded-3xl border border-zinc-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 text-left">
           <h2 className="text-xl md:text-2xl font-bold mb-4 text-slate-900">
             What has happened so far?
           </h2>
@@ -74,8 +73,8 @@ export default function Home() {
       </section>
 
       {/* ABOUT SECTION - Solid Line Divider */}
-      <section className="px-6 py-16 text-center relative border-t border-slate-200 bg-white">
-        <div className="max-w-4xl mx-auto bg-slate-50 p-10 md:p-14 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+      <section className="px-6 py-16 text-center relative border-t border-zinc-200 bg-white">
+        <div className="max-w-4xl mx-auto bg-zinc-50 p-10 md:p-14 rounded-3xl border border-zinc-200 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
           <h2 className="text-2xl md:text-3xl font-bold mb-6 text-slate-900">
             About Me
           </h2>
@@ -86,7 +85,7 @@ export default function Home() {
       </section>
 
       {/* EXPERTISE SECTION */}
-      <section className="px-6 py-16 relative border-t border-slate-200">
+      <section className="px-6 py-16 relative border-t border-zinc-200">
         <div className="max-w-6xl mx-auto">
 
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-12 text-slate-900">
@@ -95,8 +94,8 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-14 gap-y-10 w-full mb-4">
             {expertise.map((section) => (
-              <div key={section.title} className="bg-white p-6 md:p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-300">
-                <h3 className="text-lg font-bold mb-5 text-slate-900 tracking-wide border-b border-slate-100 pb-3">
+              <div key={section.title} className="bg-white p-6 md:p-8 rounded-2xl border border-zinc-200 shadow-sm hover:shadow-md transition-shadow duration-300">
+                <h3 className="text-lg font-bold mb-5 text-slate-900 tracking-wide border-b border-zinc-100 pb-3">
                   {section.title}
                 </h3>
 
@@ -104,7 +103,7 @@ export default function Home() {
                   {section.skills.map((skill, index) => (
                     <div 
                       key={index} 
-                      className="w-full text-left px-5 py-4 rounded-xl bg-slate-50 border border-slate-200 shadow-sm hover:bg-slate-100 transition-colors"
+                      className="w-full text-left px-5 py-4 rounded-xl bg-zinc-50 border border-zinc-200 shadow-sm hover:bg-zinc-100 transition-colors"
                     >
                       <span className="text-sm font-semibold text-slate-800">{skill}</span>
                     </div>
@@ -114,7 +113,6 @@ export default function Home() {
             ))}
           </div>
 
-          {/* DIRECTIONAL PROMPT */}
           <div className="w-full flex justify-start pl-2">
             <p className="text-sm md:text-base text-slate-500 italic font-medium">
               Refer Work Experience and Projects for more details regarding this.

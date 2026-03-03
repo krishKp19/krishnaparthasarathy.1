@@ -132,7 +132,7 @@ export default function ProjectsTraining() {
 
         <div className="space-y-6">
           {projects.map((project, index) => (
-            <div key={index} className="bg-white rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-300">
+            <div key={index} className="bg-white rounded-3xl border border-zinc-200 shadow-sm hover:shadow-md transition-shadow duration-300">
               
               {/* Clickable Header */}
               <button
@@ -157,14 +157,14 @@ export default function ProjectsTraining() {
                 </span>
               </button>
 
-              {/* Expanding Content - UPDATED max-h to 3000px */}
+              {/* Expanding Content */}
               <div 
                 className={`overflow-hidden transition-all duration-500 ease-in-out ${
                   activeProject === index ? "max-h-[3000px] opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
                 <div className="px-6 md:px-10 pb-8 pt-2">
-                  <div className="bg-slate-50 border border-slate-200 rounded-2xl p-6 md:p-8 text-sm md:text-base text-slate-700 font-medium leading-relaxed shadow-sm space-y-8">
+                  <div className="bg-zinc-50 border border-zinc-200 rounded-2xl p-6 md:p-8 text-sm md:text-base text-slate-700 font-medium leading-relaxed shadow-sm space-y-8">
                     
                     <div>
                       <h3 className="font-bold text-slate-900 mb-2 uppercase tracking-wide text-xs">
@@ -199,7 +199,7 @@ export default function ProjectsTraining() {
                         {project.skills.map((skill, i) => (
                           <span
                             key={i}
-                            className="bg-white border border-slate-200 text-slate-800 px-3 py-1.5 rounded-lg text-xs font-semibold shadow-sm"
+                            className="bg-white border border-zinc-200 text-slate-800 px-3 py-1.5 rounded-lg text-xs font-semibold shadow-sm"
                           >
                             {skill}
                           </span>
@@ -209,7 +209,7 @@ export default function ProjectsTraining() {
 
                     {/* DYNAMIC Live App / Document Button */}
                     {project.link && (
-                      <div className="pt-4 flex items-center gap-4 border-t border-slate-200 mt-6">
+                      <div className="pt-4 flex items-center gap-4 border-t border-zinc-200 mt-6">
                         <a 
                           href={project.link} 
                           target="_blank" 

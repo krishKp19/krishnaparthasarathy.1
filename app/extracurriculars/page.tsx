@@ -10,8 +10,8 @@ export default function Extracurriculars() {
         <div className="space-y-10">
           
           {/* CATEGORY 1: LEADERSHIP */}
-          <div className="bg-white p-8 md:p-12 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300">
-            <h2 className="text-xl md:text-2xl font-bold text-slate-900 mb-6 border-b border-slate-100 pb-4">
+          <div className="bg-white p-8 md:p-12 rounded-3xl border border-zinc-200 shadow-sm hover:shadow-md transition-all duration-300">
+            <h2 className="text-xl md:text-2xl font-bold text-slate-900 mb-6 border-b border-zinc-100 pb-4">
               Leadership & Initiatives
             </h2>
             
@@ -26,8 +26,8 @@ export default function Extracurriculars() {
           </div>
 
           {/* CATEGORY 2: PURSUITS */}
-          <div className="bg-white p-8 md:p-12 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition-all duration-300">
-            <h2 className="text-xl md:text-2xl font-bold text-slate-900 mb-6 border-b border-slate-100 pb-4">
+          <div className="bg-white p-8 md:p-12 rounded-3xl border border-zinc-200 shadow-sm hover:shadow-md transition-all duration-300">
+            <h2 className="text-xl md:text-2xl font-bold text-slate-900 mb-6 border-b border-zinc-100 pb-4">
               Passions & Pursuits
             </h2>
             
@@ -48,7 +48,7 @@ export default function Extracurriculars() {
                 <strong className="text-slate-900"> Travel & Exploration</strong> - Solo traveler, bike rider and adventure lover having covered almost ~70% of South India (Tamil Nadu, Kerala, Karnataka, Andhra Pradesh) and some other key destinations including Rishikesh, Haridwar, Varanasi, Amritsar, and Sikkim where I actively engage with local communities to understand cultural, economic, and social perspectives.
               </li>
               <li>
-                <strong className="text-slate-900">Competitive Badminton Player</strong> - Regular zonal-level participant at School Level and still active player over the weekends. Big admirer of Lee Chong Wei’s resilience and professionalism.
+                <strong className="text-slate-900">Competitive Badminton Player</strong> - Regular zonal-level participant at School Level and still an active player over the weekends. Big admirer of Lee Chong Wei’s resilience and professionalism.
               </li>
               <li>
                 <strong className="text-slate-900">Product Building & Automation Enthusiast</strong> - Built personal-use applications (expense tracking, investment automation tools, splitwise) to simplify decision-making and improve financial discipline.
@@ -59,10 +59,9 @@ export default function Extracurriculars() {
             </ul>
           </div>
 
-          {/* CATEGORY 3: MINDSET (The newly added line) */}
-          <div className="bg-slate-50 p-8 md:p-10 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-200 transition-all duration-300 text-center md:text-left flex flex-col md:flex-row items-center gap-6">
-            <div className="bg-white p-4 rounded-full shadow-sm border border-slate-200 flex-shrink-0">
-              {/* Simple SVG icon representing curiosity/growth */}
+          {/* CATEGORY 3: MINDSET */}
+          <div className="bg-zinc-50 p-8 md:p-10 rounded-3xl border border-zinc-200 shadow-sm hover:shadow-md transition-all duration-300 text-center md:text-left flex flex-col md:flex-row items-center gap-6">
+            <div className="bg-white p-4 rounded-full shadow-sm border border-zinc-200 flex-shrink-0">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
