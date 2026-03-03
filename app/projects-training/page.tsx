@@ -157,10 +157,10 @@ export default function ProjectsTraining() {
                 </span>
               </button>
 
-              {/* Expanding Content */}
+              {/* Expanding Content - UPDATED max-h to 3000px */}
               <div 
                 className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                  activeProject === index ? "max-h-[1500px] opacity-100" : "max-h-0 opacity-0"
+                  activeProject === index ? "max-h-[3000px] opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
                 <div className="px-6 md:px-10 pb-8 pt-2">
