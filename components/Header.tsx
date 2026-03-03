@@ -76,7 +76,7 @@ export default function Header() {
 
         {/* RESUME DOWNLOAD BUTTON */}
         <a 
-          href="/resume.pdf" 
+          href="/Krishna_Parthasarathy_Resume.pdf" 
           download="Krishna_Parthasarathy_Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
