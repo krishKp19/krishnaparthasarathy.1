@@ -84,6 +84,7 @@ export default function ProjectsTraining() {
       title: "Advanced Financial Modeling & Algorithmic Trading",
       tagline:
         "Integrated 9-year financial model and algorithmic trading simulation.",
+
       overview: (
         <>
           <span className="font-bold text-slate-900">Phase 1: Retail Expansion Financial Model:</span>  This project involved building a fully integrated 9-year financial model to support bank financing and a 30% equity investment proposal. 
@@ -91,6 +92,7 @@ export default function ProjectsTraining() {
           <span className="font-bold text-slate-900">Phase 2: Algorithmic Trading Simulation:</span> This phase involved designing and backtesting two systematic trading strategies - Momentum and Mean Reversion - using a 9-year SENSEX dataset.
         </>
       ),
+
       whatIDid: (
         <>
           <span className="font-bold text-slate-900">Phase 1:</span> I engineered a 108-month rolling projection that transitioned into an annual 3-statement model (Income Statement, Balance Sheet, Cash Flow). The model incorporated a mid-cycle capital injection of ₹1,200 Lakhs and accounted for overlapping depreciation schedules. I calculated WACC using CAPM (8.74%) and applied DCF valuation with a 2% terminal growth assumption. Debt Service Coverage Ratio (DSCR) was modeled across the loan lifecycle to assess lender safety. 
@@ -132,7 +134,7 @@ export default function ProjectsTraining() {
 
         <div className="space-y-6">
           {projects.map((project, index) => (
-            <div key={index} className="bg-white rounded-3xl border border-zinc-200 shadow-sm hover:shadow-md transition-shadow duration-300">
+            <div key={index} className="bg-white/70 backdrop-blur-xl rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-300">
               
               {/* Clickable Header */}
               <button
@@ -149,10 +151,10 @@ export default function ProjectsTraining() {
                     {project.tagline}
                   </p>
                 </div>
-                <span className={`hidden md:block text-slate-500 font-bold ml-4 transition-transform duration-300 ${activeProject === index ? "rotate-180 text-blue-600" : "rotate-0"}`}>
+                <span className={`hidden md:block text-slate-500 font-bold ml-4 transition-transform duration-300 ${activeProject === index ? "rotate-180 text-blue-500" : "rotate-0"}`}>
                   +
                 </span>
-                <span className={`md:hidden text-slate-500 font-bold mt-4 transition-transform duration-300 ${activeProject === index ? "rotate-180 text-blue-600" : "rotate-0"}`}>
+                <span className={`md:hidden text-slate-500 font-bold mt-4 transition-transform duration-300 ${activeProject === index ? "rotate-180 text-blue-500" : "rotate-0"}`}>
                   +
                 </span>
               </button>
@@ -160,11 +162,11 @@ export default function ProjectsTraining() {
               {/* Expanding Content */}
               <div 
                 className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                  activeProject === index ? "max-h-[3000px] opacity-100" : "max-h-0 opacity-0"
+                  activeProject === index ? "max-h-[1500px] opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
                 <div className="px-6 md:px-10 pb-8 pt-2">
-                  <div className="bg-zinc-50 border border-zinc-200 rounded-2xl p-6 md:p-8 text-sm md:text-base text-slate-700 font-medium leading-relaxed shadow-sm space-y-8">
+                  <div className="bg-white/95 backdrop-blur-md border border-slate-200 rounded-2xl p-6 md:p-8 text-sm md:text-base text-slate-700 font-medium leading-relaxed shadow-inner space-y-8">
                     
                     <div>
                       <h3 className="font-bold text-slate-900 mb-2 uppercase tracking-wide text-xs">
@@ -199,7 +201,7 @@ export default function ProjectsTraining() {
                         {project.skills.map((skill, i) => (
                           <span
                             key={i}
-                            className="bg-white border border-zinc-200 text-slate-800 px-3 py-1.5 rounded-lg text-xs font-semibold shadow-sm"
+                            className="bg-white border border-slate-200 text-slate-700 px-3 py-1.5 rounded-lg text-xs font-bold shadow-sm"
                           >
                             {skill}
                           </span>
@@ -209,7 +211,7 @@ export default function ProjectsTraining() {
 
                     {/* DYNAMIC Live App / Document Button */}
                     {project.link && (
-                      <div className="pt-4 flex items-center gap-4 border-t border-zinc-200 mt-6">
+                      <div className="pt-4 flex items-center gap-4 border-t border-slate-200/60 mt-6">
                         <a 
                           href={project.link} 
                           target="_blank" 

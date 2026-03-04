@@ -48,7 +48,7 @@ export default function Extracurriculars() {
                 <strong className="text-slate-900"> Travel & Exploration</strong> - Solo traveler, bike rider and adventure lover having covered almost ~70% of South India (Tamil Nadu, Kerala, Karnataka, Andhra Pradesh) and some other key destinations including Rishikesh, Haridwar, Varanasi, Amritsar, and Sikkim where I actively engage with local communities to understand cultural, economic, and social perspectives.
               </li>
               <li>
-                <strong className="text-slate-900">Competitive Badminton Player</strong> - Regular zonal-level participant at School Level and still an active player over the weekends. Big admirer of Lee Chong Wei’s resilience and professionalism.
+                <strong className="text-slate-900">Competitive Badminton Player</strong> - Regular zonal-level participant at School Level and still anactive player over the weekends. Big admirer of Lee Chong Wei’s resilience and professionalism.
               </li>
               <li>
                 <strong className="text-slate-900">Product Building & Automation Enthusiast</strong> - Built personal-use applications (expense tracking, investment automation tools, splitwise) to simplify decision-making and improve financial discipline.
