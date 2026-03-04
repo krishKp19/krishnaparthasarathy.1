@@ -56,7 +56,7 @@ export default function Home() {
         </h1>
 
         <p className="text-base md:text-xl text-slate-700 max-w-4xl mx-auto font-medium leading-relaxed">
-          Product Professional with a strong foundation in infrastructure and platform reliability | ex-Amazon | Focused on building reliable products, optimizing costs, and working closely across teams.
+          Product-focused professional with a strong foundation in infrastructure and platform reliability | ex-Amazon | Building reliable systems and improving cost efficiency across teams.
         </p>
 
         {/* WIDER, MORE ATTRACTIVE CARD */}
