@@ -2,6 +2,8 @@ import "./globals.css";
 // IMPORT YOUR NEW SMART HEADER
 import Header from "../components/Header";
 import type { Metadata } from 'next';
+// 1. IMPORT THE ANALYTICS COMPONENT
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: "Krishna Parthasarathy | Product Professional",
@@ -29,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Krishna Parthasarathy | Product Professional",
     description: "Explore my work experience, projects, and insights in product strategy and infrastructure engineering.",
-    images: ["/og-image.jpg"], 
+    images: ["/og-image.png"], // Updated to match the .png format used in openGraph
   },
 };
 
@@ -72,6 +74,8 @@ export default function RootLayout({
           </div>
         </footer>
 
+        {/* 2. RENDER THE ANALYTICS COMPONENT HERE */}
+        <Analytics />
       </body>
     </html>
   );
