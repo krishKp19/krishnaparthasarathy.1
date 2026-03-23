@@ -11,14 +11,14 @@ export default function ProjectsTraining() {
       tagline:
         "Automated structured equity analysis system reducing research complexity into a decision-support framework.",
       overview:
-        "This project was built to address a common gap in retail investing — the time and complexity involved in conducting structured equity analysis. A full financial audit of a stock typically requires reviewing financial statements, calculating ratios, checking technical indicators, and interpreting risk factors. The objective was to reduce this process into a structured, automated decision-support system.",
+        "This project was built to address a common gap in retail investing and junior equity research — the massive time sink and complexity involved in conducting structured equity analysis. A full financial audit of a stock typically requires cross-referencing multiple financial statements, calculating custom ratios, verifying technical indicators, and interpreting risk factors. The objective was to eliminate this bottleneck by building a highly resilient, automated decision-support system that standardizes forensic accounting.",
       whatIDid:
-        "I designed a seven-phase evaluation framework covering safety, profitability, valuation, sector context, technical indicators, management quality, and risk synthesis. To simplify interpretation, I converted over 20 financial metrics into a weighted scoring system that produces a single “Stock Readiness Score.” I also engineered a hybrid data system capable of switching to simulation mode during API rate limits, ensuring uninterrupted functionality. Additionally, I integrated an LLM layer to synthesize quantitative outputs and identify inconsistencies such as weak operating leverage despite high earnings growth.",
+        "I designed a seven-phase evaluation framework covering safety, profitability, valuation, sector context, technical indicators, management quality, and risk synthesis. To simplify interpretation, I converted over 20 financial metrics into a weighted scoring system that produces a single 'Stock Readiness Score'. To solve stringent API rate-limiting issues without relying on simulated data, I engineered a highly resilient 'Split-Hybrid Architecture'. This features a custom DOM-parsing web scraper to extract deep fundamentals (like Operating Cash Flow) directly from Screener.in, paired with a triple-redundant waterfall engine (TradingView/Yahoo) for live technical charting. Finally, I integrated an LLM layer to synthesize these quantitative outputs and instantly identify hidden inconsistencies, such as speculative price spikes lacking fundamental operating leverage.",
       impact: [
-        "Reduced manual stock analysis time from 2+ hours to approximately 30 seconds (≈60%+ efficiency gain).",
-        "Eliminated downtime caused by API failures through a fault-tolerant architecture.",
-        "Standardized early-stage detection of accounting red flags such as CFO vs EBITDA divergence.",
-        "Improved screening velocity by replacing metric overload with structured scoring.",
+        "Reduced end-to-end manual stock analysis time from 15+ minutes to approximately 3-4 minutes (a 60%+ efficiency gain)",
+        "Achieved near 100% data uptime and bypassed cloud IP bans by replacing fragile single-source APIs with a fault-tolerant, multi-layered scraping architecture.",
+        "Standardized the early-stage detection of accounting red flags and 'value traps' via automated CFO vs. EBITDA divergence checks.",
+        "Accelerated screening velocity by replacing raw metric overload with a structured, mathematically grounded scoring system.",
       ],
       skills: [
         "Product Design",
