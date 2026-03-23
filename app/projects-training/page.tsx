@@ -15,13 +15,16 @@ export default function ProjectsTraining() {
       whatIDid:
         "I designed a seven-phase evaluation framework covering safety, profitability, valuation, sector context, technical indicators, management quality, and risk synthesis. To simplify interpretation, I converted over 20 financial metrics into a weighted scoring system that produces a single 'Stock Readiness Score'. To solve stringent API rate-limiting issues without relying on simulated data, I engineered a highly resilient 'Split-Hybrid Architecture'. This features a custom DOM-parsing web scraper to extract deep fundamentals (like Operating Cash Flow) directly from Screener.in, paired with a triple-redundant waterfall engine (TradingView/Yahoo) for live technical charting. Finally, I integrated an LLM layer to synthesize these quantitative outputs and instantly identify hidden inconsistencies, such as speculative price spikes lacking fundamental operating leverage.",
       impact: [
-        "Reduced end-to-end manual stock analysis time from 15+ minutes to approximately 3-4 minutes (a 60%+ efficiency gain)",
+        "Reduced end-to-end manual stock analysis time from 15+ minutes to approximately 3 to 4 minutes (a 60%+ efficiency gain)",
         "Achieved near 100% data uptime and bypassed cloud IP bans by replacing fragile single-source APIs with a fault-tolerant, multi-layered scraping architecture.",
         "Standardized the early-stage detection of accounting red flags and 'value traps' via automated CFO vs. EBITDA divergence checks.",
         "Accelerated screening velocity by replacing raw metric overload with a structured, mathematically grounded scoring system.",
       ],
       skills: [
         "Product Design",
+        "API Handling",
+        "Web Scraping",
+        "UI/UX Design",
         "Quantitative Modeling",
         "Risk Evaluation",
         "System Architecture",
