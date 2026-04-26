@@ -18,7 +18,7 @@ export default function Home() {
     {
       title: "Analytics & Data",
       skills: [
-        "Python (pandas, Seaborn, Statsmodels",
+        "Python (Pandas, Seaborn, Statsmodels)",
         "SQL",
         "Power BI",
         "Hypothesis Testing & Regression",
