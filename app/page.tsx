@@ -5,39 +5,47 @@ import FadeIn from "../components/FadeIn"; // Import our new animation component
 export default function Home() {
   const expertise = [
     {
-      title: "Product & Strategy",
+      title: "Program & Delivery Management",
       skills: [
-        "Product Lifecycle Management (PLM)",
-        "Requirement Gathering",
-        "Go-To-Market (GTM) Strategy",
-        "Data-Driven Decision Making",
+        "Release Management",
+        "Cross-functional Delivery",
+        "Risk & Compliance Management",
+        "Agile/Scrum",
+        "Jira & Confluence",
+        "Stakeholder Management",
       ],
     },
     {
-      title: "Infrastructure & Platform Engineering",
+      title: "Analytics & Data",
       skills: [
-        "Cloud Infrastructure (AWS)",
-        "Infrastructure Architecture & System Design",
-        "DevOps & CI/CD Strategy",
-        "Security & Risk Management (DevSecOps)",
-      ],
-    },
-    {
-      title: "Analytics & Optimization",
-      skills: [
+        "Python (pandas, Seaborn, Statsmodels",
         "SQL",
         "Power BI",
-        "A/B Testing",
-        "Cloud Cost Optimization (FinOps)",
+        "Hypothesis Testing & Regression",
+        "EDA & Statistical Analysis",
+        "KPI Definition & Dashboarding",
       ],
     },
     {
-      title: "Collaboration & Modern Delivery",
+      title: "Strategy & Business",
       skills: [
-        "Stakeholder Management",
-        "Agile Methodologies",
-        "User Experience (UX) Research",
-        "Generative AI (GenAI)",
+        "Structured Problem Solving",
+        "Business Case Deveopment",
+        "Go-to-Market Strategy",
+        "Financial Modelling",
+        "Root Cause Analysis",
+        "Process Optimization",
+      ],
+    },
+    {
+      title: "Product & Technology",
+      skills: [
+        "Product Lifecycle Management",
+        "User Research & UX",
+        "AWS Cloud Infrastructure",
+        "CI/CD & Pipeline Automation",
+        "Generative AI & LLM Integration",
+        "A/B Testing",
       ],
     },
   ];
