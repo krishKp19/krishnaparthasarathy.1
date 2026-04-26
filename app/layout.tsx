@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
-  title: "Krishna Parthasarathy | Product Professional",
+  title: "Krishna Parthasarathy | Amazon | Program Management · Analytics · Strategy",
   description: "Product Professional with a strong foundation in infrastructure and platform reliability. ex-Amazon. Focused on building reliable products and optimizing costs.",
   
   // This tells search engines it's a website and sets the main URL
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: "/og-image.png", // This points to the image you put in the public folder
         width: 1200,
         height: 630,
-        alt: "Krishna Parthasarathy - Product Professional",
+        alt: "Krishna Parthasarathy | Amazon | Program Management · Analytics · Strategy",
       },
     ],
   },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   // Twitter requires its own specific tags to render large summary cards
   twitter: {
     card: "summary_large_image",
-    title: "Krishna Parthasarathy | Product Professional",
+    title: "Krishna Parthasarathy | Amazon | Program Management · Analytics · Strategy",
     description: "Explore my work experience, projects, and insights in product strategy and infrastructure engineering.",
     images: ["/og-image.png"], // Updated to match the .png format used in openGraph
   },
