@@ -6,7 +6,7 @@ export default function Header() {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const dropdownRef = useRef(null);
+  const dropdownRef = useRef<HTMLDivElement>(null); // Added type here just in case TypeScript gets strict about the ref too!
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,8 +24,9 @@ export default function Header() {
 
   // Close dropdown when clicking outside
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+    // FIX APPLIED HERE: Added 'MouseEvent' type and 'as Node' casting
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
         setDropdownOpen(false);
       }
     };
