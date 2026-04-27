@@ -21,7 +21,7 @@ export default function Education() {
 
             {/* COMBINED INTRO AND MAJOR/CGPA */}
             <p className="text-slate-700 leading-relaxed text-base font-medium mb-8">
-              Graduated a  one-year, full-time management program majoring in <strong>Finance and Strategy Consulting</strong> with a <strong>CGPA of 3.23/4.00 </strong> after stepping away from four years of industry experience to deepen my understanding of how businesses operate end to end. The program has strengthened my foundation across core areas such as operations, statistics, finance, and marketing, while sharpening structured thinking and decision-making under constraints. Alongside academics, I actively collaborate with peers on hands-on projects and experiments, building and exploring ideas beyond the classroom. 
+              Completed a  one-year, full-time management program majoring in <strong>Finance and Strategy Consulting</strong> with a <strong>CGPA of 3.23/4.00 </strong> after stepping away from four years of industry experience to deepen my understanding of how businesses operate end to end. The program has strengthened my foundation across core areas such as operations, statistics, finance, and marketing, while sharpening structured thinking and decision-making under constraints. Alongside academics, I actively collaborate with peers on hands-on projects and experiments, building and exploring ideas beyond the classroom. 
             </p>
 
             {/* FINANCE SECTION */}
