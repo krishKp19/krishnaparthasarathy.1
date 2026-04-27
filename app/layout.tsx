@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: "/og-image.png", // This points to the image you put in the public folder
         width: 1200,
         height: 630,
-        alt: "Krishna Parthasarathy | Amazon | Program Management · Analytics · Strategy",
+        alt: "Krishna Parthasarathy | Amazon | Analytics · Strategy · Program Management · Product Management",
       },
     ],
   },
