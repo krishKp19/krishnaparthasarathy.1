@@ -35,15 +35,20 @@ export default function Header() {
   }, []);
 
   const resumes = [
+   {
+      label: "Business & Data Analyst",
+      file: "/Krishna_Parthasarathy_DA.pdf",
+      filename: "Krishna_Parthasarathy_DA.pdf",
+    },
+    {
+      label: "Strategy & Consulting",
+      file: "/Krishna_Parthasarathy_Consulting.pdf",
+      filename: "Krishna_Parthasarathy_Consulting.pdf",
+    },
     {
       label: "Program / Technical Program Manager",
       file: "/Krishna_Parthasarathy_TPM.pdf",
       filename: "Krishna_Parthasarathy_TPM.pdf",
-    },
-    {
-      label: "Business & Data Analyst",
-      file: "/Krishna_Parthasarathy_DA.pdf",
-      filename: "Krishna_Parthasarathy_DA.pdf",
     },
     {
       label: "Product Manager",
@@ -51,9 +56,9 @@ export default function Header() {
       filename: "Krishna_Parthasarathy_PM.pdf",
     },
     {
-      label: "Strategy & Consulting",
-      file: "/Krishna_Parthasarathy_Consulting.pdf",
-      filename: "Krishna_Parthasarathy_Consulting.pdf",
+      label: "QA & SDET Engineering",
+      file: "/Krishna_Parthasarathy_QA.pdf",
+      filename: "Krishna_Parthasarathy_QA.pdf",
     },
   ];
 
