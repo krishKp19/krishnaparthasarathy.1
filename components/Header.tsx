@@ -102,7 +102,7 @@ export default function Header() {
           <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
         </Link>
         <Link href="/extracurriculars" className="relative group hover:text-white transition-colors duration-300 py-1">
-          Extra-Curriculars
+          Extra-Curriculars & Interests
           <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
         </Link>
 
