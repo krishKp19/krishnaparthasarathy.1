@@ -3,54 +3,54 @@
 import FadeIn from "../components/FadeIn";
 
 export default function Home() {
-  const expertise = [
-    {
-      title: "Program & Delivery Management",
-      skills: [
-        "Release Management",
-        "Cross-functional Delivery",
-        "Risk & Compliance Management",
-        "Agile/Scrum",
-        "Jira & Confluence",
-        "Stakeholder Management",
-      ],
-    },
-    {
-      title: "Analytics & Data",
-      skills: [
-        "Python (Pandas, Seaborn, Statsmodels)",
-        "SQL",
-        "Power BI",
-        "Hypothesis Testing & Regression",
-        "EDA & Statistical Analysis",
-        "KPI Definition & Dashboarding",
-      ],
-    },
-    {
-      title: "Strategy & Business",
-      skills: [
-        "Structured Problem Solving",
-        "Business Case Development",
-        "Go-to-Market Strategy",
-        "Financial Modelling",
-        "Root Cause Analysis",
-        "Process Optimization",
-      ],
-    },
-    {
-      title: "Product & Technology",
-      skills: [
-        "Product Lifecycle Management",
-        "User Research & UX",
-        "AWS Cloud Infrastructure",
-        "CI/CD & Pipeline Automation",
-        "Generative AI & LLM Integration",
-        "A/B Testing",
-        "Selenium & Test Automation",
-        "Python & TypeScript",
-      ],
-    },
-  ];
+ const expertise = [
+  {
+    title: "Data Engineering & Cloud Platforms",
+    skills: [
+      "AWS Data Ecosystem (S3, Redshift, Glue, Lambda, Athena, CloudWatch)",
+      "Data Lake & Warehouse Architecture",
+      "ETL / ELT Pipeline Automation",
+      "Cloud Infrastructure & Security",
+      "Data Modeling & Schema Design",
+      "Distributed Computing (PySpark)", 
+      "Workflow Orchestration (Apache Airflow, AWS Step Functions)",
+    ],
+  },
+  {
+    title: "Data Analytics",
+    skills: [
+      "Python (Pandas, Seaborn, Matplotlib, NumPy)",
+      "Advanced SQL (CTEs, Window Functions)", 
+      "Power BI & Executive Dashboards",
+      "Exploratory Data Analysis (EDA)",
+      "Hypothesis Testing & Regression",
+      "KPI Definition",
+      "Advanced Excel",
+    ],
+  },
+  {
+    title: "Business Strategy & Domain",
+    skills: [
+      "BFSI (Banking & Financial Services) Domain",
+      "Business-to-Tech Translation",
+      "Structured Problem Solving",
+      "Financial Modeling & Business Cases",
+      "Process Optimization",
+      "Root Cause Analysis (RCA)",
+    ],
+  },
+  {
+    title: "AI Solutions & Program Delivery",
+    skills: [
+      "GenAI & RAG Architectures (LangChain, Vector DBs)",
+      "MLOps & AI Pipeline Integration",
+      "Release Program Management",
+      "CI/CD & Operational Automation",
+      "Agile / Scrum Methodologies",
+      "Stakeholder Management",
+    ],
+  },
+];
 
   return (
     <main className="min-h-screen flex flex-col text-slate-900">
@@ -74,7 +74,7 @@ export default function Home() {
 
         <FadeIn delay={0.3}>
           <p className="text-base md:text-xl text-slate-700 max-w-4xl mx-auto font-medium leading-relaxed">
-            Amazon · Great Lakes PGPM · Program Management · Analytics · Product · Strategy · Quality Engineering · Open to Opportunities
+            Data Engineer & Cloud Consultant | AWS Data Platforms · Cloud Infrastructure | TCS · Ex-Amazon · Great Lakes PGPM
           </p>
         </FadeIn>
       </section>
@@ -87,13 +87,13 @@ export default function Home() {
               About Me
             </h2>
             <p className="text-slate-700 leading-relaxed text-base md:text-lg font-medium text-justify">
-              I am a technology and operations professional with <strong>4+ years at Amazon</strong> and a <strong>Great Lakes PGPM in Finance</strong>, open to roles at the intersection of technical execution and business thinking.
+              I’m a <strong>Data Engineer and Cloud Consultant</strong> focussed on building reliable data platforms and cloud infrastructure that directly serve business goals.
               <br /><br />
-              My experience covers release program management, data analytics, quality engineering, and infrastructure operations - all at production scale at Amazon. I have owned end-to-end release programs, built executive reporting pipelines, automated operational workflows using AI, mitigated 600+ compliance risks, and conducted statistical analysis on datasets exceeding 1.6 million rows.
+              Currently at <strong>Tata Consultancy Services</strong>, I work within the BFSI unit designing <strong>AWS-based data platforms</strong> that help business leaders process insights faster. Before this, I spent 4 years at Amazon working across release program management, support engineering, DevOps, and infrastructure operations at largescale.
               <br /><br />
-              My MBA adds the business layer - financial modelling, go-to-market strategy, structured problem solving, and the ability to translate technical findings into decisions for senior leadership.
+              My 1-year management program (PGPM) at Great Lakes specializing in <strong>Finance and Consulting</strong>taught me to understand how businesses and operations actually work behind the scenes. That context is what helps me know what to build rightly-starting with the root business problem, understanding client needs, and keeping solutions frugal. For me, data engineering isn't just about building pipelines-it's about creating that single source of truth every business relies on to make sharp decisions.
               <br /><br />
-              I am actively looking for roles in <strong>Technical Program Management, Business & Data Analytics, Product Management, Strategy & Consulting, and Quality Engineering</strong> - across any industry where engineering depth and business acumen together create value.
+              Whether it’s cloud architecture, pipeline design, or applying modern data frameworks, I bring a balance of <strong>deep engineering execution</strong> and <strong>business domain understanding</strong>.
             </p>
           </div>
         </FadeIn>
@@ -107,15 +107,17 @@ export default function Home() {
               My Journey
             </h2>
             <p className="text-slate-700 leading-relaxed text-base md:text-lg font-medium">
-              I did not plan to end up at this intersection of technology, data, and business. It happened because I kept finding problems worth solving.
+              I didn't plan to end up at this exact intersection of technology, data, and business. It happened simply because I kept finding problems worth solving.
               <br /><br />
-              I started as a Device Associate at Amazon, testing the WebView APK across Echo, Fire TV, and Tablet devices. Early on I noticed that a significant portion of manual test cases were redundant - so I automated them, reduced the release cycle time by 12%, and helped build a thermal benchmarking framework that became the launch-readiness standard for hardware validation.
+              I started as a Device Associate at Amazon, testing the WebView APK across Echo, Fire TV, and Tablet devices. Early on, I noticed that a significant portion of manual test cases were redundant-so I automated them, reduced release cycle times by 12%, and helped build a thermal benchmarking framework that became a launch-readiness standard for hardware validation.
               <br /><br />
-              Moving into Software Support Engineer II on Books Detail Page, I found myself well beyond the scope of my title. I was running release programs across four engineering teams, investigating why 70% of weekly alerts were false positives, building dashboards for L8 leadership, driving infrastructure migrations, and deploying AI automation to eliminate operational waste. The work was part engineering, part analytics, part program management - and I thrived in that ambiguity.
+              Moving into Software Support Engineering II on the Books Detail Page team expanded my scope fast. I ended up running release programs across four engineering teams, investigating why 70% of weekly alerts were false positives, building dashboards for L8 leadership, driving infrastructure migrations, and deploying AI automation to eliminate operational waste. The work was part engineering, part analytics, and part program management-and I thrived in that ambiguity.
               <br /><br />
-              I pursued the PGPM at Great Lakes to put a business framework around everything I had built operationally. Portfolio optimisation, market research, financial modelling, consulting case work - it filled the gaps I knew I had and opened up how I think about problems.
+              I pursued the PGPM at Great Lakes to put structured business context around everything I had built operationally. Studying financial modeling, consulting frameworks, and business strategy gave me a clear understanding of how operations and client needs actually function behind the scenes. It taught me how to look at the bigger picture and know what to build rightly.
               <br /><br />
-              The result is someone who can own complex delivery, analyse data rigorously, think strategically, and communicate clearly across technical and business audiences. That is the kind of professional I am - and the kind of role I am looking for next.
+              That realization led me to my current role as a Data Engineer at Tata Consultancy Services. Working in the BFSI unit, I focus on building AWS Data Platforms that translate complex financial domain requirements into fast, reliable, and frugal systems-creating that single source of truth business leaders need to make sharp decisions.
+              <br /><br />
+              Today, I operate as a Data Engineer and Cloud Consultant. Whether it's cloud architecture, data pipeline engineering, or domain strategy, I focus on bridging deep technical execution with real-world business value.
             </p>
           </div>
         </FadeIn>
