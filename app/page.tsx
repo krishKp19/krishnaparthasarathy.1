@@ -91,7 +91,7 @@ export default function Home() {
               <br /><br />
               Currently at <strong>Tata Consultancy Services</strong>, I work within the BFSI unit designing <strong>AWS-based data platforms</strong> that help business leaders process insights faster. Before this, I spent 4 years at Amazon working across release program management, support engineering, DevOps, and infrastructure operations at largescale.
               <br /><br />
-              My 1-year management program (PGPM) at Great Lakes specializing in <strong>Finance and Consulting</strong>taught me to understand how businesses and operations actually work behind the scenes. That context is what helps me know what to build rightly-starting with the root business problem, understanding client needs, and keeping solutions frugal. For me, data engineering isn't just about building pipelines-it's about creating that single source of truth every business relies on to make sharp decisions.
+              My 1-year management program (PGPM) at Great Lakes specializing in <strong>Finance and Consulting</strong> taught me to understand how businesses and operations actually work behind the scenes. That context is what helps me know what to build rightly-starting with the root business problem, understanding client needs, and keeping solutions frugal. For me, data engineering isn't just about building pipelines-it's about creating that single source of truth every business relies on to make sharp decisions.
               <br /><br />
               Whether it’s cloud architecture, pipeline design, or applying modern data frameworks, I bring a balance of <strong>deep engineering execution</strong> and <strong>business domain understanding</strong>.
             </p>
